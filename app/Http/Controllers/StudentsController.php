@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class StudentsController extends Controller
 {
+    public function __construct()
+    {
+        $this->authorizeResource(Student::class, 'student');
+    }
     public function index()
     {
         $students = Student::all();
