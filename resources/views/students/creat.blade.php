@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section('content')
 
     <form action="{{ route('students.store') }}" method="post">
@@ -6,15 +6,15 @@
         @csrf
 
         <label for="student_name">Lot Name</label>
-        <input required name="student_name" />
+        <input required name="student_name"/>
         <br/>
 
         <label for="cours">Start Date</label>
-        <input required name="cours" />
+        <input required name="cours"/>
         <br/>
 
         <label for="speciality">End Date</label>
-        <input required name="speciality" />
+        <input required name="speciality"/>
         <br/>
 
         <label for="success_id">Rates</label>
